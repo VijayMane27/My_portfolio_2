@@ -7,7 +7,7 @@ const CommandPrompt = () => {
   const [commands, setCommands] = useState([]);
   const [lastCommandIndex, setLastCommandIndex] = useState("");
   const router = useRouter();
-  const inputRef = useRef(null); // Ref for the input element
+  const inputRef = useRef(null);
 
   const executeCommand = (command) => {
     let result;
@@ -336,6 +336,22 @@ const CommandPrompt = () => {
         overflowY: "scroll",
         overflowX: "hidden",
         padding: "20px",
+        // Scrollbar styles
+        scrollbarWidth: "thin" /* For Firefox */,
+        scrollbarColor: "#333 #000" /* For Firefox */,
+        "&::-webkit-scrollbar": {
+          width: "10px",
+        },
+        "&::-webkit-scrollbar-track": {
+          background: "#000",
+        },
+        "&::-webkit-scrollbar-thumb": {
+          background: "#333",
+          borderRadius: "5px",
+        },
+        "&::-webkit-scrollbar-thumb:hover": {
+          background: "#555",
+        },
       }}
     >
       <div
