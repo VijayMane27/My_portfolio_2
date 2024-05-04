@@ -14,7 +14,7 @@ const CommandPrompt = () => {
     switch (command.toLowerCase()) {
       case "help":
         result = (
-          <div>
+          <div style={{ fontFamily: "Consolas, monospace" }}>
             List of available commands:
             <br />
             myself
@@ -39,7 +39,7 @@ const CommandPrompt = () => {
         break;
       case "myself":
         result = (
-          <div>
+          <div style={{ fontFamily: "Consolas, monospace" }}>
             Name: Vijay Prakash Mane
             <br />
             Email: vmane2873@gmail.com
@@ -52,19 +52,20 @@ const CommandPrompt = () => {
           </div>
         );
         break;
-
       case "profile":
-        result = `Full Stack Developer with a strong foundation in
-        web development technologies. Eager to apply
-        practical skills in building modern and scalable web
-        applications. Proficient in utilizing the Next.js and
-        React framework for front-end development,
-        Node.js for server-side logic, and TypeORM and
-        PostgreSQL for efficient database management.`;
+        result = (
+          <div style={{ fontFamily: "Consolas, monospace" }}>
+            Full Stack Developer with a strong foundation in web development
+            technologies. Eager to apply practical skills in building modern and
+            scalable web applications. Proficient in utilizing the Next.js and
+            React framework for front-end development, Node.js for server-side
+            logic, and TypeORM and PostgreSQL for efficient database management.
+          </div>
+        );
         break;
       case "education":
         result = (
-          <div>
+          <div style={{ fontFamily: "Consolas, monospace" }}>
             Bachelor&apos;s Degree in IT
             <br />
             V. G. Vaze College of Arts, Commerce, and Science
@@ -95,62 +96,103 @@ const CommandPrompt = () => {
         result = (
           <div>
             <ul>
-              <li>
-                <strong>Title:</strong> Team-11 Admin Panel
+              <li style={{ fontFamily: "Consolas, monospace" }}>
+                <strong style={{ fontFamily: "Consolas, monospace" }}>
+                  Title:
+                </strong>{" "}
+                Team-11 Admin Panel
                 <br />
-                <strong>Description:</strong> Led the development of Team 11
-                app&apos;s admin pages, prize distribution system, and
-                authentication model using Next.js, HTML, and CSS. Implemented
-                robust solutions to enhance user experience and ensure secure
-                authentication, contributing to the app&apos;s overall
-                functionality and success.
+                <strong style={{ fontFamily: "Consolas, monospace" }}>
+                  Description:
+                </strong>{" "}
+                Led the development of Team 11 app&apos;s admin pages, prize
+                distribution system, and authentication model using Next.js,
+                HTML, and CSS. Implemented robust solutions to enhance user
+                experience and ensure secure authentication, contributing to the
+                app&apos;s overall functionality and success.
                 <br />
-                <strong>GitHub URL:</strong>{" "}
-                <a href="https://github.com/VijayMane27/team11_dev">
+                <strong style={{ fontFamily: "Consolas, monospace" }}>
+                  GitHub URL:
+                </strong>{" "}
+                <a
+                  style={{ fontFamily: "Consolas, monospace" }}
+                  href="https://github.com/VijayMane27/team11_dev"
+                >
                   https://github.com/VijayMane27/team11_dev
                 </a>
               </li>
               <br />
-              <li>
-                <strong>Title:</strong> Teacher&apos;s Diary
+              <li style={{ fontFamily: "Consolas, monospace" }}>
+                <strong style={{ fontFamily: "Consolas, monospace" }}>
+                  Title:
+                </strong>{" "}
+                Teacher&apos;s Diary
                 <br />
-                <strong>Description:</strong> Developed a comprehensive
-                Teacher&apos;s Diary app using React Native for a seamless
-                mobile experience. Implemented features allowing teachers to
-                save lecture notes, manage attendance records, and download the
-                data.
+                <strong style={{ fontFamily: "Consolas, monospace" }}>
+                  Description:
+                </strong>{" "}
+                Developed a comprehensive Teacher&apos;s Diary app using React
+                Native for a seamless mobile experience. Implemented features
+                allowing teachers to save lecture notes, manage attendance
+                records, and download the data.
                 <br />
-                <strong>GitHub URL:</strong>{" "}
-                <a href="https://github.com/VijayMane27/diary">
+                <strong style={{ fontFamily: "Consolas, monospace" }}>
+                  GitHub URL:
+                </strong>{" "}
+                <a
+                  style={{ fontFamily: "Consolas, monospace" }}
+                  href="https://github.com/VijayMane27/diary"
+                >
                   https://github.com/VijayMane27/diary
                 </a>
               </li>
               <br />
-              <li>
-                <strong>Title:</strong> Stock Prediction Using Streamlit
+              <li style={{ fontFamily: "Consolas, monospace" }}>
+                <strong style={{ fontFamily: "Consolas, monospace" }}>
+                  Title:
+                </strong>{" "}
+                Stock Prediction Using Streamlit
                 <br />
-                <strong>Description:</strong> Developing a stock prediction
-                application using Streamlit to visualize and forecast stock
-                prices based on historical data and machine learning models. The
-                project aims to provide users with insights and predictions to
-                make informed investment decisions.
+                <strong style={{ fontFamily: "Consolas, monospace" }}>
+                  Description:
+                </strong>{" "}
+                Developing a stock prediction application using Streamlit to
+                visualize and forecast stock prices based on historical data and
+                machine learning models. The project aims to provide users with
+                insights and predictions to make informed investment decisions.
                 <br />
-                <strong>GitHub URL:</strong>{" "}
-                <a href="https://github.com/VijayMane27/stocksforcast">
+                <strong style={{ fontFamily: "Consolas, monospace" }}>
+                  GitHub URL:
+                </strong>{" "}
+                <a
+                  style={{ fontFamily: "Consolas, monospace" }}
+                  href="https://github.com/VijayMane27/stocksforcast"
+                >
                   https://github.com/VijayMane27/stocksforcast
                 </a>
               </li>
-              <li>
+              <li style={{ fontFamily: "Consolas, monospace" }}>
                 <br />
-                <strong>Title:</strong> Cricket Player Photo Scraping
+                <strong style={{ fontFamily: "Consolas, monospace" }}>
+                  Title:
+                </strong>{" "}
+                Cricket Player Photo Scraping
                 <br />
-                <strong>Description:</strong> Creating a Python-based photo
-                scraping tool to collect and organize cricketer&apos;s photos
-                from various sources. The project simplifies the process of
-                gathering images for cricket enthusiasts and analysts.
+                <strong style={{ fontFamily: "Consolas, monospace" }}>
+                  Description:
+                </strong>{" "}
+                Creating a Python-based photo scraping tool to collect and
+                organize cricketer&apos;s photos from various sources. The
+                project simplifies the process of gathering images for cricket
+                enthusiasts and analysts.
                 <br />
-                <strong>GitHub URL:</strong>{" "}
-                <a href="https://github.com/VijayMane27/PlayerPhotoScrapping">
+                <strong style={{ fontFamily: "Consolas, monospace" }}>
+                  GitHub URL:
+                </strong>{" "}
+                <a
+                  style={{ fontFamily: "Consolas, monospace" }}
+                  href="https://github.com/VijayMane27/PlayerPhotoScrapping"
+                >
                   https://github.com/VijayMane27/PlayerPhotoScrapping
                 </a>
               </li>
@@ -160,7 +202,7 @@ const CommandPrompt = () => {
         break;
       case "technicalskills":
         result = (
-          <div>
+          <div style={{ fontFamily: "Consolas, monospace" }}>
             JavaScript
             <br />
             Node.js
@@ -181,7 +223,7 @@ const CommandPrompt = () => {
         break;
       case "softskills":
         result = (
-          <div>
+          <div style={{ fontFamily: "Consolas, monospace" }}>
             Communication Skills
             <br />
             Teamwork
@@ -196,7 +238,7 @@ const CommandPrompt = () => {
         break;
       case "languages":
         result = (
-          <div>
+          <div style={{ fontFamily: "Consolas, monospace" }}>
             English
             <br />
             Hindi
@@ -225,7 +267,11 @@ const CommandPrompt = () => {
         setLastCommandIndex(0);
         return;
       default:
-        result = `Unknown command: ${command}`;
+        result = (
+          <div style={{ fontFamily: "Consolas, monospace" }}>
+            Unknown command: {command}
+          </div>
+        );
     }
     setOutput([...output, { command, result }]);
     setCommands([...commands, command]);
