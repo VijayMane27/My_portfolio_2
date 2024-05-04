@@ -1,18 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
+// pages/index.js
 
-export default function Home() {
+import React from "react";
+import CommandPrompt from "./components/prompt";
+
+const IndexPage = () => {
   return (
-    <div>
-      <Head>
-        <title>title</title>
-        <meta name="description" content=" " />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <main
+      className="flex min-h-screen flex-col bg-[#121212]"
+      style={{ backgroundImage: `url('/background.jpg')` }}
+    >
+      <CommandPrompt />
+    </main>
+  );
+};
 
-      <main>
-
-      </main>
-    </div>
-  )
-}
+export default IndexPage;
