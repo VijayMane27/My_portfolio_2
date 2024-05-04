@@ -48,7 +48,7 @@ const CommandPrompt = () => {
             <br />
             Mobile No: 8425993294
             <br />
-            Date of Birth: June 27th, 2002&semi;
+            Date of Birth: June 27th, 2002
           </div>
         );
         break;
@@ -79,7 +79,7 @@ const CommandPrompt = () => {
             <br />
             2020 – 2021 | Thane, India
             <br />
-            HSC Scored 66.55%;
+            HSC Scored 66.55%
             <br />
             SSC
             <br />
@@ -87,7 +87,7 @@ const CommandPrompt = () => {
             <br />
             2018 – 2019 | Mulund, India
             <br />
-            SSC Scored 80.20%;
+            SSC Scored 80.20%
           </div>
         );
         break;
