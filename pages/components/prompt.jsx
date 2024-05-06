@@ -254,7 +254,7 @@ const CommandPrompt = () => {
         link.href = resumeURL;
         link.setAttribute("download", "Vijay-Prakash-Mane-Resume.pdf");
         link.click();
-        result = "Downloading Downloaded Chek In Your";
+        result = "Downloaded Chek In Your Folder";
         break;
       case "contact":
         // Navigate to the contact page
